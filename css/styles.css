@@ -7,6 +7,11 @@ body {
         
 }
 
+.body:has(.backdrop.is-open) {
+    overflow-y: hidden;
+}
+
+
 h1,
 h2,
 h3,
@@ -624,4 +629,116 @@ margin-left: auto;
 
 .footer-social-icon {
     fill: #f4f4fd;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(46 47 66 / 40%);
+     
+    transition-property: opacity, visibility;
+    transition: 300ms ease-in 150ms;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;}
+
+    
+
+        
+
+    .backdrop.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: initial;
+        transition-delay: 0ms;
+       
+    }
+
+    .backdrop.is-open .modal {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-50%);
+        transition-delay: 300ms;
+
+
+     }
+    
+    
+    .modal-btn {
+
+    }
+   
+
+.modal {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)
+    translateY(-70%);
+    opacity: 0;
+
+    width: 517px;
+    min-height: 794px;
+    padding: 72px 24px 24px 24px;
+    border-radius: 15px;
+    background-color: #fafafa;
+
+    transition-property: opacity, transform;
+    transition: 150ms ease;
+
+    
+
+}
+
+.modal-btn {
+position: absolute;
+    top: 24px;
+    right: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
+    padding: 0;
+    cursor: pointer;
+
+    color: #2e2f42;
+    transition:
+        background-color 250ms ease-in-out,
+        border 250ms ease-in-out,
+        color 250ms ease-in-out;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: #404bbf;
+        border: none;
+        color: #ffffff;
+        outline: none;
+}
+
+.modal-btn-icon {
+    fill: currentColor;
+    
+}
+
+.modal-slogan {
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #000080;
 }
