@@ -620,6 +620,11 @@
                   </a>
                 </li>
               </ul>
+              <form class="footer-form" name="subscribeForm">
+                <label for="">
+                  <input type="email" placeholder="E-mail"/>
+                </label>
+              </form>
             </div>
           </div>
         </div>
@@ -637,24 +642,85 @@
             Leave your contacts and we will call you back
           </p>
 
-          <form
-            class="feedback-form"
-            name="feedback"
-            autocomplete="on"
-            novalidate
-          >
-            <div>
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
+          <form class="feedback-form" name="feedback">
+            <div class="feedback-wrapper">
+              <label class="feedback-label" for="userName">Name</label>
+              <div class="feedback-field">
+                <input
+                  class="feedback-input"
+                  type="text"
+                  id="useName"
+                  name="userName"
+                />
+                <svg class="feedback-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-photo"></use>
+                </svg>
+              </div>
             </div>
 
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
+            <form class="feedback-form" name="feedback">
+            <div class="feedback-wrapper">
+              <label class="feedback-label" for="userPhone">Phone</label>
+              <div class="feedback-field">
+                <input
+                  class="feedback-input"
+                  type="tel"
+                  id="userPhone"
+                  name="userPhone"
+                />
+                <svg class="feedback-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-tell"></use>
+                </svg>
+              </div>
             </div>
 
+            <form class="feedback-form" name="feedback">
+            <div class="feedback-wrapper">
+              <label class="feedback-label" for="userEmail">Email</label>
+              <div class="feedback-field">
+                <input
+                  class="feedback-input"
+                  type="email"
+                  id="userEmail"
+                  name="userEmail"
+                />
+                <svg class="feedback-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-massage"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="feedback-wrapper">
+  <label class="feedback-label" for="userComment">Comment</label>
+
+  <textarea
+    class="feedback-comment"
+    name="userComment"
+    id="userComment"
+    rows="4"
+    placeholder="Text input"></textarea>
+</div>
+
+<label class="feedback-agreement">
+  <input 
+  class="feedback-checkbox visually-hidden"
+    type="checkbox" 
+    name="userAgreement" 
+    id="userAgreement" 
+    value="true" 
+  />
+
+  <span class="feedback-toggler">
+    <svg class="feedback-toggler-icon" width="10" height="8">
+      <use href="./images/icons.svg#icon-done"></use>
+    </svg>
+  </span>
+
+  I accept the terms and conditions of the 
+  <a class="feedback-link" href="#">Privacy Policy</a>
+</label>
             <div>
-              <button class="feedback-form-btn" type="submit">Send</button>
+              <button class="hero-button" type="submit">Send</button>
             </div>
           </form>
         </div>
