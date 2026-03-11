@@ -777,7 +777,6 @@ position: absolute;
     display: block;
     margin-bottom: 4px;
     
-    font-family: Arial, sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 117%;
@@ -856,7 +855,8 @@ position: absolute;
 .feedback-agreement {
     display: flex;
     align-items: center;
-    margin-top: 24px;
+    margin-top: 0;
+    margin-bottom: 24px;
 
     font-family: "Roboto", sans-serif;
     font-weight: 400;
