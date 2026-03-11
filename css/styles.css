@@ -851,7 +851,7 @@ position: absolute;
 .feedback-agreement {
     display: flex;
     align-items: center;
-    margin-top: 16px;
+    margin-top: 0;
 
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -969,7 +969,7 @@ position: absolute;
 
 .feedback-btn {
     display: block;
-    margin: 24px auto 0;
+    margin: 0;
 
     min-width: 169px;
     height: 56px;
