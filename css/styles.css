@@ -916,7 +916,7 @@ position: absolute;
 
 .footer-form-filed:hover,
 .footer-form-filed:focus {
-    border-color: #4d5ae5;
+    border-color: #31d0aa;
 }
 
 .footer-form-filed::placeholder {
@@ -948,7 +948,7 @@ position: absolute;
 
 .footer-btn:hover,
 .footer-btn:focus {
-    background-color: #404bbf;
+    background-color: #31d0aa;
 }
 
 .footer-btn-icon {
