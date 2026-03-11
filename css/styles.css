@@ -778,6 +778,11 @@ position: absolute;
     position: relative;
 }
 
+.feedback-field:focus {
+    border-color: #4D5AE5;
+    }
+
+
 .feedback-input {
 
     border: 1px solid rgba(46, 47, 66, 0.4);
