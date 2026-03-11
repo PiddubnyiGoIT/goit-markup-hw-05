@@ -759,7 +759,7 @@ position: absolute;
 .feedback-form {}
 
 .feedback-wrapper {
-    margin-bottom: 8px;
+    margin-bottom: 0;
     
 }
 
@@ -847,7 +847,7 @@ position: absolute;
 .feedback-agreement {
     display: flex;
     align-items: center;
-    margin: 16px 22px 24px 16px;
+    margin-top: 16px;
 
     font-family: "Roboto", sans-serif;
     font-weight: 400;
